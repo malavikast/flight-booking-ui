@@ -1,0 +1,200 @@
+/* Global Styles */
+// body {
+//     margin: 0;
+//     padding: 0;
+//     font-family: Arial, sans-serif;
+//     background: #f4f4f4;
+// }
+
+// /* NAVBAR STYLES (same as before) */
+// nav {
+//     background: rgba(50, 50, 50, 0.9);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 70px;
+//     position: fixed;
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+// }
+
+// nav ul {
+//     list-style: none;
+//     display: flex;
+//     gap: 20px;
+//     padding: 0;
+// }
+
+// nav li {
+//     cursor: pointer;
+// }
+
+// nav button {
+//     background: white;
+//     border: none;
+//     padding: 12px 20px;
+//     border-radius: 5px;
+//     font-size: 16px;
+//     color: black;
+//     font-weight: bold;
+//     cursor: pointer;
+//     transition: all 0.3s ease;
+// }
+
+// nav button:hover {
+//     background: #ddd;
+//     color: black;
+// }
+
+// /* USERS PAGE CONTAINER */
+// .users-container {
+//     padding-top: 100px;
+//     /* Prevents navbar overlap */
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     min-height: 100vh;
+// }
+
+// /* LOADING STATE AND NO USERS MESSAGE */
+// .loading,
+// .no-users {
+//     font-size: 18px;
+//     color: #333;
+//     text-align: center;
+//     padding: 20px;
+// }
+
+// /* USERS TABLE STYLES */
+// .users-table {
+//     width: 80%;
+//     margin: 20px auto;
+//     border-collapse: collapse;
+//     background: white;
+//     border-radius: 8px;
+//     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+// }
+
+// th,
+// td {
+//     padding: 15px;
+//     text-align: center;
+//     border: 1px solid #ddd;
+// }
+
+// th {
+//     background: #333;
+//     color: white;
+// }
+
+// tbody tr:hover {
+//     background-color: #f1f1f1;
+// }
+
+
+/* BODY STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    /* Ensure body takes up full viewport height */
+    overflow: hidden;
+    /* Disable scrolling for the entire page */
+}
+
+/* FULLSCREEN BACKGROUND CONTAINER */
+.page-container {
+    background: url('https://images.unsplash.com/photo-1437846972679-9e6e537be46e?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    /* Cover the full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVBAR STYLES */
+nav {
+    background: rgba(50, 50, 50, 0.9);
+    /* Grey navbar with slight transparency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* Ensures navbar stays on top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav li {
+    cursor: pointer;
+}
+
+nav button {
+    background: white;
+    /* White buttons */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* TABLE CONTAINER STYLES */
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.4);
+    /* Slight opacity */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* TABLE STYLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.4);
+    /* Slightly transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: rgba(42, 21, 96, 0.8);
+    color: white;
+}
+
+tbody tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+}

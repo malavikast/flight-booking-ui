@@ -9,15 +9,32 @@
     </ul>
 </nav> -->
 
-<nav>
+<!-- <nav>
     <ul>
         <li><button routerLink="/" routerLinkActive="active">Home</button></li>
         <li><button routerLink="/users" routerLinkActive="active">Users</button></li>
         <li><button routerLink="/flights" routerLinkActive="active">Flights</button></li>
         <li><button routerLink="/booking" routerLinkActive="active">Booking</button></li>
     </ul>
-</nav>
+</nav> -->
+
+<div class="page-container">
+    <nav>
+        <ul>
+            <li><button routerLink="/" routerLinkActive="active">Home</button></li>
+            <li><button routerLink="/users" routerLinkActive="active">Users</button></li>
+            <li><button routerLink="/flights" routerLinkActive="active">Flights</button></li>
+            <li><button routerLink="/booking" routerLinkActive="active">Booking</button></li>
+        </ul>
+    </nav>
+
+    <!-- This is where the routed components will be displayed -->
+    <router-outlet></router-outlet>
+
+    <!-- Your tables and other content go here -->
+</div>
+
 
 
 <!-- This is where the routed components will be displayed -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->

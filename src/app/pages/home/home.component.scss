@@ -1,0 +1,17 @@
+.home-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    /* Big font size */
+    font-weight: bold;
+    color: white;
+    /* Bright white color */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    /* Adds depth to the text */
+    font-family: 'Poppins', sans-serif;
+    /* Modern, clean font */
+    text-align: center;
+    white-space: nowrap;
+}

@@ -1,4 +1,4 @@
-<p>flights works!</p>
+<!-- <p>flights works!</p>
 
 <div *ngIf="isLoading">Loading flights...</div>
 
@@ -27,4 +27,40 @@
             <td>{{ flight.availableSeats }}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
+
+<div class="flights-container">
+    <div *ngIf="isLoading" class="loading">
+      Loading flights...
+    </div>
+  
+    <div *ngIf="!isLoading && flights.length === 0" class="no-flights">
+      No flights available.
+    </div>
+  
+    <table *ngIf="!isLoading && flights.length > 0" class="flights-table">
+      <thead>
+        <tr>
+          <th>Flight Number</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Departure Time</th>
+          <th>Arrival Time</th>
+          <th>Price</th>
+          <th>Available Seats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let flight of flights">
+          <td>{{ flight.flightNumber }}</td>
+          <td>{{ flight.departure }}</td>
+          <td>{{ flight.arrival }}</td>
+          <td>{{ flight.departureTime }}</td>
+          <td>{{ flight.arrivalTime }}</td>
+          <td>{{ flight.price }}</td>
+          <td>{{ flight.availableSeats }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
