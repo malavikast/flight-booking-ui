@@ -1,0 +1,14 @@
+
+<div class="container">
+    <h2>Find Booking by ID</h2>
+    <label>Enter Booking ID:</label>
+    <input type="number" [(ngModel)]="bookingId">
+    <button (click)="getBookingById()">Find Booking</button>
+
+    <div *ngIf="booking">
+        <p><strong>Booking ID:</strong> {{ booking.id }}</p>
+        <p><strong>User ID:</strong> {{ booking.user.id }}</p>
+        <p><strong>Flight ID:</strong> {{ booking.flight.id }}</p>
+        <p><strong>Status:</strong> {{ booking.status }}</p>
+    </div>
+</div>

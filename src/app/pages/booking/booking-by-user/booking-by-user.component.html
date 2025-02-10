@@ -1,0 +1,18 @@
+
+<div class="container">
+    <h2>Find Bookings by User ID</h2>
+    <label>Enter User ID:</label>
+    <input type="number" [(ngModel)]="userId">
+    <button (click)="getBookingsByUser()">Find Bookings</button>
+
+    <div *ngIf="bookings.length > 0">
+        <h3>Booking List</h3>
+        <ul>
+            <li *ngFor="let booking of bookings">
+                <strong>Booking ID:</strong> {{ booking.id }} |
+                <strong>Flight ID:</strong> {{ booking.flight.id }} |
+                <strong>Status:</strong> {{ booking.status }}
+            </li>
+        </ul>
+    </div>
+</div>
