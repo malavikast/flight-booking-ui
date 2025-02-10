@@ -1,0 +1,43 @@
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 36px;
+    /* Increased font size */
+    color: #333;
+    /* Dark color for the heading */
+    margin-bottom: 30px;
+    /* Space below the heading */
+}
+
+/* Button Styling */
+button {
+    background: rgba(255, 255, 255, 0.4);
+    /* White button background */
+    border: 1px solid #ddd;
+    /* Light border for definition */
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    /* Button font size */
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    /* Adds vertical space between buttons */
+    width: 100%;
+    /* Makes the buttons full width */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background: #f1f1f1;
+    /* Slightly darken the button on hover */
+    border-color: #bbb;
+}
