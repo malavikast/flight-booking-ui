@@ -12,9 +12,9 @@ export class BookingService {
 
   constructor(private http: HttpClient) { }
 
-  // createBooking(uid: number, fid: number): Observable<Booking> {
-  //   return this.http.post<Booking>(`${this.apiUrl}?uid=${uid}&fid=${fid}`, {});
-  // }
+  createBooking(uid: number, fid: number): Observable<Booking> {
+    return this.http.post<Booking>(`${this.apiUrl}?uid=${uid}&fid=${fid}`, {});
+  }
 
   getBookingById(bookingId: number): Observable<Booking> {
     return this.http.get<Booking>(`${this.apiUrl}/${bookingId}`);

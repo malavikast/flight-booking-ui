@@ -1,14 +1,15 @@
-<p>create-booking works!</p>
+<div class="booking-container">
+    <div class="booking-content">
+        <h2>Make a Booking</h2>
 
-<div class="container">
-    <h2>Make a Booking</h2>
-    <label>User ID:</label>
-    <input type="number" [(ngModel)]="userId">
+        <label>User ID:</label>
+        <input type="number" [(ngModel)]="userId">
 
-    <label>Flight ID:</label>
-    <input type="number" [(ngModel)]="flightId">
+        <label>Flight ID:</label>
+        <input type="number" [(ngModel)]="flightId">
 
-    <button (click)="createBooking()">Book Now</button>
+        <button (click)="createBooking()">Book Now</button>
 
-    <p>{{ message }}</p>
+        <p class="booking-message">{{ message }}</p>
+    </div>
 </div>

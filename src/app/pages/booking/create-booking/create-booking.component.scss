@@ -1,0 +1,80 @@
+/* BODY STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    /* Disable scrolling for the entire page */
+}
+
+/* BACKGROUND CONTAINER */
+.booking-container {
+    background: url('https://images.unsplash.com/photo-1483190237676-85040187b4b9?q=80&w=2942&auto=format&fit=crop') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOOKING CONTENT */
+.booking-content {
+    background: rgba(255, 255, 255, 0.6);
+    /* Slight opacity */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+.booking-content h2 {
+    font-size: 30px;
+    color: #3e1758;
+    margin-bottom: 20px;
+}
+
+/* FORM ELEMENTS */
+label,
+input {
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+    width: 93%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input {
+    border: 1px solid #ddd;
+}
+
+/* BUTTON STYLING */
+button {
+    background: rgba(255, 255, 255, 0.9);
+    /* White with slight opacity */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.7);
+    /* Slightly more opaque on hover */
+    border-color: #bbb;
+}
+
+/* BOOKING MESSAGE */
+.booking-message {
+    font-size: 18px;
+    color: #3e1758;
+    margin-top: 15px;
+    font-weight: bold;
+}
